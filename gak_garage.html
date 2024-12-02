@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="gak-garage.css">
+    <script src="gak_garage.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAK garage</title>
@@ -19,7 +20,8 @@
                     <img src="telegram.png" alt="Телеграм" class="img" width="40" height="40">
                 </a>
                 <a href="https://www.youtube.com/@gak_garage9329" target="_blank">
-                    <img src="youtube.png" alt="Ютуб" class="img" width="40" height="40">
+                    <img src="https://cdn-icons-png.flaticon.com/128/187/187210.png" alt="Ютуб" class="img" width="40"
+                        height="40">
                 </a>
                 <a href="#" target="_blank">
                     <img src="instagram.png" alt="Інстаграм" class="img" width="40" height="40">
@@ -37,18 +39,21 @@
             <div class="about-text">
                 <h1>Про мене</h1>
                 <p>Мене звати Євген. Кування стало для мене більше, ніж просто хобі.
-                    <br>Спочатку я просто хотів зробити дружині оригінальний подарунок на річницю весілля – кований свічник.
+                    <br>Спочатку я просто хотів зробити дружині оригінальний подарунок на річницю весілля – кований
+                    свічник.
                     <br>Інформацію про те, як реалізувати свою ідею шукав на багатьох каналах Ютуб, присвячених кованим
                     виробам – дивився, навчався, повторював.
-                    <br>Перша робота зараз зберігається вдома, я розумію, що вона далека від досконалості і зараз я зробив би
-                    багато чого по-іншому. <br>Це змушує мене рухатися вперед і самовдосконалюватись. <br>І тепер мені хотілося б
+                    <br>Перша робота зараз зберігається вдома, я розумію, що вона далека від досконалості і зараз я
+                    зробив би
+                    багато чого по-іншому. <br>Це змушує мене рухатися вперед і самовдосконалюватись. <br>І тепер мені
+                    хотілося б
                     поділитися цим з Вами - показати мої робочі верстати, готові роботи, розповісти трохи про себе.
                 </p>
             </div>
             <img src="P1012005.jpg" alt="Моє фото" class="about-image">
         </section>
 
-        <section id="products">
+        <section id="products" class="fade-in">
             <h2>КОВАНІ ВИРОБИ</h2>
             <div class="image-text-container image-left">
                 <img src="P1012021.jpg" alt="Гойдалка" width="400px" height="300px">
@@ -72,7 +77,7 @@
                 </div>
             </div>
             <div class="image-text-container image-left">
-                <img src="20220612_141402.jpg" alt="Мангал" width="270" height="290">
+                <img src="./IMG-3b807a75fb3a3d976b69bda41cb79369-V.jpg" alt="Мангал" width="270" height="290">
                 <div class="text">
                     <h1>Туристичний розбірний мангал</h1>
                     <p>Туристичний розбірний мангал. Жарівня виконана з листової сталі завтовшки 2 мм, розміром
@@ -82,26 +87,43 @@
                 </div>
             </div>
         </section>
-    </main>
+        <form id="feedback-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Надіслати</button>
+        </form>
+        
+        <section id="feedbacks">
+            <h2>Відгуки наших покупців</h2>
+        </section>
+        
 
-    <footer id="contacts">
-        <h1>Контакти</h1>
-        <span>Наші соціальні мережі</span>
-        <a href="https://t.me/gak_garage" target="_blank">
-            <img src="telegram.png" alt="Телеграм" class="img" width="30" height="30">
-        </a>
-        <a href="https://www.youtube.com/@gak_garage9329" target="_blank">
-            <img src="youtube.png" alt="Ютуб" class="img" width="30" height="30">
-        </a>
-        <a href="#" target="_blank">
-            <img src="instagram.png" alt="Інстаграм" class="img" width="30" height="30">
-        </a>
-        <span><br>Здійснюємо доставку по всій Україні: </span>
-        <img src="nova_posta.png" alt="Нова Пошта" class="img" width="30" height="30">
-        <img src="ukr_posta.png" alt="Укр пошта" class="img" width="30" height="30">
-        <img src="meest.png" alt="Meest пошта" class="img" width="30" height="30">
-        <p>&copy; 2024 GAK garage. Всі права захищені.</p>
-    </footer>
+        <footer id="contacts">
+            <h1>Контакти</h1>
+            <span>Наші соціальні мережі</span>
+            <a href="https://t.me/gak_garage" target="_blank">
+                <img src="telegram.png" alt="Телеграм" class="img" width="30" height="30">
+            </a>
+            <a href="https://www.youtube.com/@gak_garage9329" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/187/187210.png" alt="Ютуб" class="img" width="30"
+                    height="30">
+            </a>
+            <a href="#" target="_blank">
+                <img src="instagram.png" alt="Інстаграм" class="img" width="30" height="30">
+            </a>
+            <span><br>Здійснюємо доставку по всій Україні: </span>
+            <img src="nova_posta.png" alt="Нова Пошта" class="img" width="30" height="30">
+            <img src="ukr_posta.png" alt="Укр пошта" class="img" width="30" height="30">
+            <img src="meest.png" alt="Meest пошта" class="img" width="30" height="30">
+            <p>&copy; 2024 GAK garage. Всі права захищені.</p>
+        </footer>
 </body>
 
 </html>
